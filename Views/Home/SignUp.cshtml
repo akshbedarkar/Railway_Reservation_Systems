@@ -1,0 +1,66 @@
+﻿@model RailwayReservationMVC.Models.User
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Signup</title>
+    
+</head>
+<body style="background-color :#9fd5e0; ">
+    <div ">
+        @using (Html.BeginForm("SignUp", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+           <div class="border" style=" text-align:center" >
+               <h2>Sign Up</h2>
+               <p>Please fill in this form to create an account!</p>
+               <hr>
+               <div class="form-group">
+
+                   @Html.DisplayNameFor(model => model.FirstName)
+                   @Html.TextBoxFor(model => model.FirstName)<br />
+                   @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+
+               </div>
+               <div class="form-group col-12 mt-3 w-auto">
+
+                   @Html.DisplayNameFor(model => model.LastName)
+                   @Html.TextBoxFor(model => model.LastName)<br />
+
+               </div>
+               <div class="form-group col-12 mt-3 w-auto">
+
+                   @Html.DisplayNameFor(model => model.Gender)&nbsp&nbsp&nbsp&nbsp
+                   @Html.TextBoxFor(model => model.Gender)<br />
+
+               </div>
+               <div class="form-group  col-12 mt-3 w-auto">
+
+                   @Html.DisplayNameFor(model => model.Email)&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                   @Html.TextBoxFor(model => model.Email)
+
+               </div>
+               <div class="form-group  col-12 mt-3 col-xs-7">
+
+                   @Html.DisplayNameFor(model => model.Password)
+                   @Html.TextBoxFor(model => model.Password)
+
+               </div>
+
+               <div class="form-group col-12 mt-3">
+                   <button type="submit" class="btn btn-primary btn-sm">Sign Up</button>
+               </div>
+
+              
+
+               <div class="hint-text">Already have an account? <a href="~/Home/LogIn">Login here</a></div>
+           </div>
+               
+               
+           
+
+        }
+
+</body>
+</html>
+
+

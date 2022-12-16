@@ -1,0 +1,104 @@
+﻿@model RailwayReservationMVC.Models.Reservation
+
+@{
+    ViewBag.Title = "DeleteReservation";
+}
+
+<h2>DeleteReservation</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainDetails.TrainName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainDetails.TrainName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Res_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Res_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Res_Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Res_Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Res_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Res_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuotaType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuotaType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Res_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Res_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PNR_NO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PNR_NO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seat_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seat_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transaction_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transaction_Id)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
