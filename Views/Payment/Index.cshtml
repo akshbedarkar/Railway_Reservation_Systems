@@ -1,0 +1,53 @@
+﻿@model  RailwayReservationMVC.Models.OrderModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Initiate</title>
+
+
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container login-container">
+        <div class="login-card">
+            <div class="login-card-body">
+                @using (Html.BeginForm("CreateOrder", "Payment", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <h2>Enter Payment Details</h2><br />
+
+                    <div class="row">
+                        <label for="name">Name</label>
+                        @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
+                    </div>
+                    <div class="row">
+                        <label for="email">Email</label>
+                        @Html.TextBoxFor(x => x.email, new { @class = "form-control" })
+                    </div>
+                    <div class="row">
+                        <label for="contactNumber">Contact Number</label>
+                        @Html.TextBoxFor(x => x.contactNumber, new { @class = "form-control" })
+                    </div>
+                    <div class="row">
+                        <label for="address">Address</label>
+                        @Html.TextBoxFor(x => x.address, new { @class = "form-control" })
+                    </div>
+                    <div class="row">
+                        <label for="amount">Amount</label>
+                        @Html.TextBox("amount", "500", new { @class = "form-control", @readonly = "readonly" })
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

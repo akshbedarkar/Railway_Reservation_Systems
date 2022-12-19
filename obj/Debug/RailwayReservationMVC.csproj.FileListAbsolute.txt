@@ -54,6 +54,8 @@ C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservatio
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\EntityFramework.SqlServer.dll
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\Newtonsoft.Json.dll
+C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\Razorpay.dll
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\System.Web.Helpers.dll
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\System.Web.Mvc.dll
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\System.Web.Razor.dll
@@ -62,6 +64,7 @@ C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservatio
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\System.Web.Webpages.Razor.dll
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\EntityFramework.xml
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\EntityFramework.SqlServer.xml
+C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\Newtonsoft.Json.xml
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\System.Web.Razor.xml
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\System.Web.Webpages.xml
 C:\Users\Akshatabedarkar\source\repos\RailwayReservationSystem\RailwayReservationMVC\bin\System.Web.Webpages.Deployment.xml

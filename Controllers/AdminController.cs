@@ -21,6 +21,8 @@ namespace RailwayReservationMVC.Controllers
         {
             var data = interfaceObj.GetModel().ToList();
             return View(data);
+            
+
         }
 
         public ActionResult Create()

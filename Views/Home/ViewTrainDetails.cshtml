@@ -1,0 +1,53 @@
+﻿@model IEnumerable<RailwayReservationMVC.Models.TrainDetails>
+
+
+@using (Html.BeginForm("ViewTrainDetails", "Home", FormMethod.Post))
+{
+    @Html.TextBox("searching")
+    
+    <button type="submit" class="btn btn-success">Search</button>
+}
+
+<table class="table table-striped">
+    <thead >
+        <tr>
+
+            <th>Train Name</th>
+            <th>Departure</th>
+            <th>Destination</th>
+            <th>Fare</th>
+            <th>Arrival time</th>
+            <th>Departure Time</th>
+            <th>Total Seat</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3" style="color:red">
+                    No matchh any document
+                </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr >
+
+                    <td>@item.TrainName</td>
+                    <td>@item.SourceStation</td>
+                    <td>@item.DestinationStation</td>
+                    <td>@item.Fare</td>
+                    <td>@item.ArrivalTime</td>
+                    <td>@item.DepartureTime</td>
+                    <td>@item.TotalSeats</td>
+                </tr>
+            }
+
+
+
+        }
+    </tbody>
+</table>

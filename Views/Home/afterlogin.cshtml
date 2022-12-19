@@ -1,10 +1,50 @@
 ﻿
 @{
-    ViewBag.Title = "afterlogin";
+    ViewBag.Title = "Welcome User !";
 }
 @TempData["Message"]
-<h2>afterlogin</h2>
 
-<input type="button" value="train details" />
-<input type="button" value="Reservation" />
-<input type="button" value="cancel" />
+<style>
+    .card {
+        display: inline-block;
+        margin:auto;
+        
+    }
+</style>
+
+<!-- Background image -->
+<div class="bg-image d-flex justify-content-center align-items-center"
+     style=" background-image: url('https://cdn.pixabay.com/photo/2018/02/21/10/16/train-station-3169964_1280.jpg'); height: 100vh; ">
+    <div class="card" style="width: 18rem; background-color:aliceblue">
+        <div class="card-body">
+            <div class="col-mt-2">
+                <h5 class="card-title">View Train Details</h5>
+                <p class="card-text">View all the available train details</p>
+                <a href="ViewTrainDetails" class="btn btn-primary">Show Available Trains</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; background-color:aliceblue">
+        <div class="card-body">
+            <div class="col-mt-2">
+                <h5 class="card-title">Reservation</h5>
+                <p class="card-text">Book Train Tickets</p>
+                
+                @Html.ActionLink("Book Ticket", "Index", "Res", "", new { @class = "btn btn-primary" })
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; background-color:aliceblue">
+        <div class="card-body">
+            <div class="col-mt-2">
+                <h5 class="card-title">Cancel Ticket!</h5>
+                <p class="card-text">Enter your PNR number !</p>
+                <a href="homepage" class="btn btn-primary">Cancel Ticket!</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+

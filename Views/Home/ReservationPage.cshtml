@@ -1,14 +1,5 @@
 ﻿@model IEnumerable<RailwayReservationMVC.Models.Reservation>
 
-@{
-    ViewBag.Title = "ReservationPage";
-}
-
-<h2>ReservationPage</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -23,9 +14,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Res_Gender)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Res_Address)
-        </th>
+      
         <th>
             @Html.DisplayNameFor(model => model.QuotaType)
         </th>
@@ -58,9 +47,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Res_Gender)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Res_Address)
-        </td>
+        
         <td>
             @Html.DisplayFor(modelItem => item.QuotaType)
         </td>
@@ -76,11 +63,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Transaction_Id)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Res_Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Res_Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Res_Id })
-        </td>
+        
     </tr>
 }
 
